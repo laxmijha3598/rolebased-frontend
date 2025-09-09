@@ -6,7 +6,7 @@ const AuthContext = createContext(null);
 // Support both Vite and CRA env styles
 const viteApi = typeof import.meta !== 'undefined' && import.meta?.env?.VITE_API_BASE;
 const craApi = typeof process !== 'undefined' && process?.env?.REACT_APP_API_BASE;
-const API_BASE = viteApi || craApi || 'https://rolebased-backend-1.onrender.com/api';
+const API_BASE = viteApi || craApi || 'https://rolebased-backend-2.onrender.com/api';
 
 export function AuthProvider({ children }) {
   const [token, setToken] = useState(() => localStorage.getItem('token'));
